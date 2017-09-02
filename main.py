@@ -9,7 +9,7 @@ def randomName():
 
 def randomContent():
     s = "\""
-    for num in range(1, randint(2, 20000)):
+    for num in range(1, randint(2, 2000)):
         s = s + "a"
     return s
 
@@ -17,6 +17,8 @@ def randomPath(maxDepth):
     s = "/"
     for num in range(1, randint(2, 2 + maxDepth)):
         s = s + randomName() + "/"
+
+    s = s[0:-1]
     return s
 
 def randomFunction(maxDepth):
