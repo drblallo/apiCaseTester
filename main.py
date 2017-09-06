@@ -42,7 +42,7 @@ def randomFunction(maxDepth):
 
 def generateTestCase():
     for num in range(0, 100000000):
-        print(randomFunction(int(num/100)))
+        print(randomFunction(int(100)))
     print("exit")
 
 generateTestCase()
